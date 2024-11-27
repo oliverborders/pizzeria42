@@ -600,6 +600,14 @@ html {
   z-index: 10;
 }
 
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
+.col-span-5 {
+  grid-column: span 5 / span 5;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -611,6 +619,10 @@ html {
 
 .table {
   display: table;
+}
+
+.grid {
+  display: grid;
 }
 
 .hidden {
@@ -634,12 +646,24 @@ html {
   max-width: 56rem;
 }
 
+.flex-grow {
+  flex-grow: 1;
+}
+
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-rows-1 {
+  grid-template-rows: repeat(1, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -684,7 +708,7 @@ html {
 
 .bg-cream {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 247 243 / var(--tw-bg-opacity));
+  background-color: rgb(255 242 229 / var(--tw-bg-opacity));
 }
 
 .px-4 {
@@ -774,11 +798,6 @@ html {
 
 .underline {
   text-decoration-line: underline;
-}
-
-.hover\:bg-primary:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(218 41 28 / var(--tw-bg-opacity));
 }
 
 .hover\:text-primary:hover {
