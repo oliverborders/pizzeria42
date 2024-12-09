@@ -600,14 +600,6 @@ html {
   z-index: 10;
 }
 
-.col-span-2 {
-  grid-column: span 2 / span 2;
-}
-
-.col-span-5 {
-  grid-column: span 5 / span 5;
-}
-
 .float-right {
   float: right;
 }
@@ -616,45 +608,38 @@ html {
   margin: 1rem;
 }
 
-.m-10 {
-  margin: 2.5rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
 
-.mt-0 {
-  margin-top: 0px;
-}
-
-.-mt-4 {
-  margin-top: -1rem;
-}
-
-.-mt-5 {
-  margin-top: -1.25rem;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
-.mb-6 {
-  margin-bottom: 1.5rem;
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .-mt-6 {
   margin-top: -1.5rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mr-4 {
+  margin-right: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .flex {
@@ -690,10 +675,6 @@ html {
   max-width: 56rem;
 }
 
-.flex-grow {
-  flex-grow: 1;
-}
-
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -702,16 +683,8 @@ html {
   cursor: pointer;
 }
 
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.grid-rows-1 {
-  grid-template-rows: repeat(1, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -742,20 +715,45 @@ html {
   gap: 0.5rem;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .gap-6 {
   gap: 1.5rem;
 }
 
-.gap-4 {
-  gap: 1rem;
+.gap-8 {
+  gap: 2rem;
 }
 
 .scroll-smooth {
   scroll-behavior: smooth;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.border-b-0 {
+  border-bottom-width: 0px;
+}
+
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
+.border-primary {
+  --tw-border-opacity: 1;
+  border-color: rgb(218 41 28 / var(--tw-border-opacity));
 }
 
 .bg-cream {
@@ -763,30 +761,23 @@ html {
   background-color: rgb(255 242 229 / var(--tw-bg-opacity));
 }
 
-.bg-blue-200 {
+.bg-cream-dark {
   --tw-bg-opacity: 1;
-  background-color: rgb(191 219 254 / var(--tw-bg-opacity));
+  background-color: rgb(255 224 193 / var(--tw-bg-opacity));
 }
 
-.bg-blue-400 {
+.bg-keprimary {
   --tw-bg-opacity: 1;
-  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
+  background-color: rgb(247 166 23 / var(--tw-bg-opacity));
 }
 
-.p-4 {
-  padding: 1rem;
+.bg-odprimary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(228 25 25 / var(--tw-bg-opacity));
 }
 
 .p-0 {
   padding: 0px;
-}
-
-.p-10 {
-  padding: 2.5rem;
-}
-
-.p-3 {
-  padding: 0.75rem;
 }
 
 .p-2 {
@@ -798,9 +789,19 @@ html {
   padding-right: 1rem;
 }
 
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .py-8 {
@@ -868,8 +869,9 @@ html {
   text-transform: uppercase;
 }
 
-.capitalize {
-  text-transform: capitalize;
+.text-bodycopy {
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
 }
 
 .text-primary {
@@ -882,12 +884,23 @@ html {
   color: rgb(15 23 42 / var(--tw-text-opacity));
 }
 
-.text-inherit {
-  color: inherit;
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .underline {
   text-decoration-line: underline;
+}
+
+.hover\:bg-kesecondary:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 182 68 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-odsecondary:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(216 24 24 / var(--tw-bg-opacity));
 }
 
 .hover\:text-primary:hover {
@@ -902,6 +915,10 @@ html {
 }
 
 @media (min-width: 768px) {
+  .md\:mb-12 {
+    margin-bottom: 3rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -920,6 +937,10 @@ html {
 
   .md\:justify-center {
     justify-content: center;
+  }
+
+  .md\:rounded-xl {
+    border-radius: 0.75rem;
   }
 
   .md\:p-10 {
