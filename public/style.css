@@ -919,6 +919,10 @@ html {
     margin-bottom: 3rem;
   }
 
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .md\:block {
     display: block;
   }
