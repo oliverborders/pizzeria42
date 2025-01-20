@@ -12,6 +12,7 @@ module.exports = {
         'kesecondary': '#F8B644',
         'odprimary': '#E41919',
         'odsecondary': '#D81818',
+        'ueprimary': '#0E8345',
       }
     },
   },
